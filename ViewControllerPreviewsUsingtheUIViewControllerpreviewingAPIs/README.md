@@ -1,14 +1,16 @@
-#Taptic Engine Playground
+# Taptic Engine Playground
 
-This example was used to discover the Apple's usage of 
+This example was used to discover the Apple's usage of Taptic Engine functions. It's actuation methods are hidden in `UIDevice` and `_UITapticEngine` classes and are called by `UIPreviewInteractionController` when appropriate.
 
-This sample displays a UITableViewController that triggers view controller previews, using preferredContentSize to show previews of different sizes. The sample also includes single-item and grouped action items.
+This original sample displays a UITableViewController that triggers view controller previews, using preferredContentSize to show previews of different sizes. The sample also includes single-item and grouped action items.
 
 ## Disclaimer
 
 **When you are using Apple Private API's you are taking all responsibility for any damage done to your device. That includes running and testing all code, contained in this repository.**
 
 ## Research
+
+The methods and classes for Taptic Engine can be found using [**Runtime Headers**](https://github.com/nst/iOS-Runtime-Headers), look for `UIDevice` and `_UITapticEngine` classes.
 
 The values for peek and pop were discovered using [Aspects](https://github.com/steipete/Aspects) and this is an example output:
 
